@@ -5,3 +5,6 @@ class Business(models.Model):
 	name = models.CharField(max_length=255)
 	description = models.TextField()
 	established = models.DateField()
+
+	def __str_(self):
+		return self.name
