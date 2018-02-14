@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<hr style="height:2px;background-color:black;border:none;" noshade />
+	<ul>
+	{% for business in objects %}
+	
+		<a href="{% url 'business_detail' business_id=business.id %}">
+			<li><strong>Name :</strong> {{business.name}} </li>
+			<li><strong>Description :</strong> {{business.description}} </li>
+		</a>
+		
+	<hr style="height:2px;background-color:black;border:none;" noshade />
+	{% endfor %}
+	</ul>
+	
+</body>
+</html>

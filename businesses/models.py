@@ -6,5 +6,7 @@ class Business(models.Model):
 	description = models.TextField()
 	established = models.DateField()
 
-	def __str_(self):
+	def __str__(self):
 		return self.name
+
+	
